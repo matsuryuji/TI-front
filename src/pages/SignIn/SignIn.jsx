@@ -1,7 +1,11 @@
 import React from "react";
+import { TextField } from "../../components/core";
 
 const SignIn = () => {
     return (
-        <TextF
+        <TextField/>
+
     )
 };
+
+export default SignIn;
