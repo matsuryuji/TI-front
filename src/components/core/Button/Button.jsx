@@ -6,4 +6,4 @@ const Button = ({children, variant, ...props}) => {
     )
 };
 
-export default Button 
+export default Button; 
