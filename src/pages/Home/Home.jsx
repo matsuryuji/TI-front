@@ -1,6 +1,10 @@
+import Navbar from "components/Navbar";
+
 const Home = () => {
     return(
-        <div>dijhnasdiuhjashiudas</div>
+        <div>
+            <Navbar/>
+        </div>
     )
 }
 
