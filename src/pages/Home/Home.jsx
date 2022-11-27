@@ -1,3 +1,4 @@
+import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import NewsDetail from "components/NewsDetail";
 
@@ -8,6 +9,7 @@ const Home = () => {
             <div className="mt-[100px]">
             <NewsDetail/>
             </div>
+            <Footer/>
         </div>
     )
 }

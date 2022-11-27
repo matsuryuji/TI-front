@@ -3,6 +3,7 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import COVER_IMAGE from 'assets/cover-image.jpg';
 import ReplyIcon from '@mui/icons-material/Reply';
 import { Button, TextField } from 'components/core';
+import IMAGE from 'assets/image.jpg';
 
 const NewsDetail = () => {
   return(
@@ -60,11 +61,49 @@ const NewsDetail = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col bg-[#fff] mx-[280px]'>
+      <div className='flex flex-col bg-[#fff] mx-[280px] mb-[48px]'>
         <div className='m-[48px]'>
           <h1 className="text-[32px] font-bold mb-[40px]">Deixe um comentário</h1>
           <TextField fullWidth variant="outlined" className="rounded-md" multiline rows={3} placeholder="Escreva seu comentário aqui..."/>
           <Button variant="contained" className="w-[200px] h-[52px]" style={{backgroundColor: "#13aa48", marginTop: "40px"}}><span className='font-semibold'>Enviar comentário</span></Button>
+        </div>
+      </div>  
+      <div className='flex flex-col bg-[#fff] mx-[280px] mb-[48px]'>
+        <div className='flex flex-row justify-between'>
+          <h1 className="text-[40px] font-bold mb-[40px]">Related Articles</h1>
+          <Button className="w-[300px] h-[52px]" style={{color: "#13aa48", borderColor: "#13aa48"}}  variant="outlined" >Voltar para o feed de notícias</Button>
+        </div>
+        <div className='flex flex-row justify-between'>
+          <div className='flex flex-col'>
+            <div><img src={IMAGE} className="w-[100%] rounded-md h-[300px] w-[416px]" alt=""/></div>
+            <div className='m-[24px]'>
+              <div className='flex flex-row justify-between mb-[16px]'>
+                <p className='text-[14px]  text-[#33354d] font-bold'>Sustentabilidade</p>
+                <p className='text-[14px] text-[#9397ad]'>01/02/2022</p>
+              </div>
+              <p className='text-[20px] text-[#33354d] font-bold'>Título da notícia</p>
+            </div>
+          </div>
+          <div className='flex flex-col'>
+            <div><img src={IMAGE} className="w-[100%] rounded-md h-[300px] w-[416px]" alt=""/></div>
+            <div className='m-[24px]'>
+              <div className='flex flex-row justify-between mb-[16px]'>
+                <p className='text-[14px]  text-[#33354d] font-bold'>Sustentabilidade</p>
+                <p className='text-[14px] text-[#9397ad]'>01/02/2022</p>
+              </div>
+              <p className='text-[20px] text-[#33354d] font-bold'>Título da notícia</p>
+            </div>
+          </div>
+          <div className='flex flex-col'>
+            <div><img src={IMAGE} className="w-[100%] rounded-md h-[300px] w-[416px]" alt=""/></div>
+            <div className='m-[24px]'>
+              <div className='flex flex-row justify-between mb-[16px]'>
+                <p className='text-[14px]  text-[#33354d] font-bold'>Sustentabilidade</p>
+                <p className='text-[14px] text-[#9397ad]'>01/02/2022</p>
+              </div>
+              <p className='text-[20px] text-[#33354d] font-bold'>Título da notícia</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
