@@ -1,6 +1,7 @@
 import { Button, TextField } from "components/core";
 import IMAGE from "assets/image.jpg";
 import { Chip } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const NewsFeed = () => {
   return (
@@ -29,9 +30,11 @@ const NewsFeed = () => {
                   }}
                   label="Sustentabilidade"
                 ></Chip>
-                <p className="text-[28px] text-[#33354d] font-bold my-[12px]">
-                  Título da notícia
-                </p>
+                <Link to={"/"}>
+                  <p className="text-[28px] text-[#33354d] font-bold my-[12px]">
+                    Título da notícia
+                  </p>
+                </Link>
               </div>
               <p className="text-[16px] text-[#565973] mb-[24px]">
                 Nunc aliquet scelerisque pellentesque imperdiet tortor elit,
@@ -60,9 +63,11 @@ const NewsFeed = () => {
                   }}
                   label="Sustentabilidade"
                 ></Chip>
-                <p className="text-[28px] text-[#33354d] font-bold my-[12px]">
-                  Título da notícia
-                </p>
+                <Link to={"/"}>
+                  <p className="text-[28px] text-[#33354d] font-bold my-[12px]">
+                    Título da notícia
+                  </p>
+                </Link>
               </div>
               <p className="text-[16px] text-[#565973] mb-[24px]">
                 Nunc aliquet scelerisque pellentesque imperdiet tortor elit,
@@ -91,9 +96,11 @@ const NewsFeed = () => {
                   }}
                   label="Sustentabilidade"
                 ></Chip>
-                <p className="text-[28px] text-[#33354d] font-bold my-[12px]">
-                  Título da notícia
-                </p>
+                <Link to={"/"}>
+                  <p className="text-[28px] text-[#33354d] font-bold my-[12px]">
+                    Título da notícia
+                  </p>
+                </Link>
               </div>
               <p className="text-[16px] text-[#565973] mb-[24px]">
                 Nunc aliquet scelerisque pellentesque imperdiet tortor elit,
@@ -112,7 +119,10 @@ const NewsFeed = () => {
             placeholder="Procurar no blog..."
             classNamew="w-[300px]"
           />
-          <div className="flex flex-col w-[100%] h-[auto] p-[24px] mt-[24px] gap-[12px]" style={{border: "1px solid #d4d7e5", borderRadius: '0.5rem' }}>
+          <div
+            className="flex flex-col w-[100%] h-[auto] p-[24px] mt-[24px] gap-[12px]"
+            style={{ border: "1px solid #d4d7e5", borderRadius: "0.5rem" }}
+          >
             <p className="text-[20px] text-[#000] font-bold">Principais tags</p>
             <p className="text-[14px] text-[#6366f1]">Todas notícias (48)</p>
             <p className="text-[14px] text-[#1a9949]">Sustentabilidade (12)</p>
